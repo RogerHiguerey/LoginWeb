@@ -1,0 +1,147 @@
+/* Estilos generales */
+
+body {
+  background-image: url("../assets/fondo3.webp");
+  background-size: cover;
+  background-position: center;
+  font-family: futura-pt, sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #ecf0f3; */
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+    -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    2px 2px 8px rgba(0, 0, 0, 0.3);
+  /* background-color: #ecf0f3; */
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+    -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    2px 2px 8px rgba(0, 0, 0, 0.3);
+  background-color: #ecf0f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo i {
+  font-size: 30px;
+  color: #6c63ff;
+}
+
+#login-form {
+  width: 100%;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-container i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.form-input {
+  width: calc(100% - 50px);
+  padding: 12px 15px 12px 40px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    2px 2px 8px rgba(0, 0, 0, 0.3);
+  background-color: #ecf0f3;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.form-btn {
+  width: 100%;
+  height: 45px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+    -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+     2px 2px 8px rgba(0, 0, 0, 0.3);
+  background-color: #6c63ff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+  color: #5c5c5c;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.text a {
+  color: #5c5c5c;
+}
+
+/* Estilos para dispositivos móviles */
+
+@media only screen and (max-width: 480px) {
+  .form-box {
+    max-width: 250px;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo i {
+    font-size: 25px;
+  }
+
+  .form-input {
+    padding: 10px 12px 10px 35px;
+    font-size: 0.8rem;
+  }
+
+  .form-btn {
+    height: 40px;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .text {
+    font-size: 0.7rem;
+  }
+}
