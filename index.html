@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de Login</title>
+  <link rel="stylesheet" href="./src/styles/loginStyles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <div class="logo">
+        <i class="fas fa-user"></i>
+      </div>
+
+      <form id="login-form" name="login-form" action="#" method="post">
+        <div class="input-container">
+          <i class="fas fa-envelope input-icon"></i>
+          <input type="text" name="username" class="form-input" placeholder="Usuario" required>
+        </div>
+
+        <div class="input-container">
+          <i class="fas fa-lock input-icon"></i>
+          <input type="password" name="password" class="form-input" placeholder="Contraseña" required>
+        </div>
+
+        <button type="submit" class="form-btn">Iniciar sesión</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
